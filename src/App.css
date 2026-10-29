@@ -1,0 +1,136 @@
+.pagina {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+
+.pagina h1 {
+  color: var(--palha);
+}
+
+.pagina h2 {
+  color: var(--palha);
+  margin-top: 2rem;
+}
+
+/* mensagem de voto */
+.mensagem {
+  background: var(--pasto);
+  padding: 0.8rem 1rem;
+  margin: 1rem 0;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* grades */
+.grade-roca {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.grade-demais {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 1rem;
+}
+
+/* card */
+.card {
+  position: relative;
+  background: var(--papel);
+  color: var(--tinta);
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.card-roca {
+  border: 4px solid var(--celeiro);
+}
+
+.selo-roca {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--celeiro);
+  color: white;
+  padding: 2px 8px;
+}
+
+/* resultado */
+.total {
+  font-size: 2rem;
+  color: var(--palha);
+}
+
+.mensagem-vazia {
+  background: var(--papel);
+  color: var(--tinta);
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.placar {
+  display: flex;
+  gap: 1rem;
+  background: var(--papel);
+  color: var(--tinta);
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+.placar img {
+  width: 160px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.placar-info {
+  flex: 1;
+}
+
+.placar-lider {
+  border: 3px solid var(--celeiro);
+}
+
+.selo-saira {
+  background: var(--celeiro);
+  color: white;
+  font-size: 0.8rem;
+  padding: 2px 8px;
+  margin-left: 0.5rem;
+}
+
+.barra {
+  background: #d6c5a3;
+  height: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.barra-preenchida {
+  background: var(--madeira);
+  height: 100%;
+  transition: width 0.5s;
+}
+
+.placar-lider .barra-preenchida {
+  background: var(--celeiro);
+}
+
+.botao-zerar {
+  background: transparent;
+  color: var(--papel);
+  border: 2px solid var(--papel);
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+}
